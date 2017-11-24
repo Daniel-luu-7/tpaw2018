@@ -37,7 +37,9 @@ $(document ).ready(function() {
          + '<a href="https://maps.google.com/?q=' + list[index].adress+ '">' + list[index].adress + '</a></td><td>' 
          + '<a href="mailto:' + list[index].mail + '">' + list[index].mail + '</a></td></tr>'
        }  
-
+       $(".modal-title").text("Confirmation"); 
+       $(".modal-body").text("Contact ajouté");
+       $("#myModal").modal("show");
    }
 
     else if($("#name").val().length==0 ||
